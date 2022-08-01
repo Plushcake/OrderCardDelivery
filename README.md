@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/vt0qmludg4ulsqec/branch/main?svg=true)](https://ci.appveyor.com/project/Plushcake/ordercarddelivery/branch/main)
+
 # Задача №1 - Заказ доставки карты
 Вам необходимо автоматизировать тестирование формы заказа доставки карты:
 ![](https://github.com/netology-code/aqa-homeworks/blob/master/selenide/pic/order.png?raw=true)
