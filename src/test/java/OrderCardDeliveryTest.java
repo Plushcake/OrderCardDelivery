@@ -28,10 +28,10 @@ public class OrderCardDeliveryTest {
     public void orderCardTest() {
         Configuration.holdBrowserOpen = true;
         open("http://localhost:9999");
-        $x("//input[@placeholder='Город']").setValue("Казань");
+        $("[placeholder=\"Город\"]").setValue("Казань");
         $("[placeholder=\"Дата встречи\"]").click();
         $("[placeholder=\"Дата встречи\"]").setValue("10.08.2022");
-        $x("//input[@name='name']").setValue("Пушкин Александр");
+        $("[name=\"name\"]").setValue("Пушкин Александр");
         $("[name=\"phone\"]").setValue("+79002223344");
         $("[data-test-id='agreement']").click();
         $("[class=\"button button_view_extra button_size_m button_theme_alfa-on-white\"]").click();
