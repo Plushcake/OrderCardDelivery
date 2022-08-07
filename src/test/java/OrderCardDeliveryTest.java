@@ -24,12 +24,6 @@ public class OrderCardDeliveryTest {
         WebDriverManager.chromedriver().setup();
     }
 
-    @AfterEach
-    //Закрываем все окна браузера.
-    public void tearDown() {
-        driver.quit();
-        driver = null;
-    }
     @Test
     public void orderCardTest() {
         Configuration.holdBrowserOpen = true;
