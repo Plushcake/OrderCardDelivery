@@ -5,6 +5,7 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.WebDriver;
 
 import java.time.Duration;
 
@@ -15,9 +16,19 @@ import static com.codeborne.selenide.Selenide.*;
 
 
 public class OrderCardDeliveryTest {
+    private WebDriver driver;
+
     @BeforeAll
-    static void setupClass(){
+    //Запускается перед всеми тестами.
+    public static void setupAll() {
         WebDriverManager.chromedriver().setup();
+    }
+
+    @AfterEach
+    //Закрываем все окна браузера.
+    public void tearDown() {
+        driver.quit();
+        driver = null;
     }
     @Test
     public void orderCardTest() {
