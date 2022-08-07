@@ -16,13 +16,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 
 public class OrderCardDeliveryTest {
-    private WebDriver driver;
-
-    @BeforeAll
-    //Запускается перед всеми тестами.
-    public static void setupAll() {
-        WebDriverManager.chromedriver().setup();
-    }
 
     @Test
     public void orderCardTest() {
